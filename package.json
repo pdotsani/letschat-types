@@ -1,0 +1,27 @@
+{
+  "name": "@letschat/types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types library for Let's Chat",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "types",
+    "letschat"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
+

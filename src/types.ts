@@ -1,9 +1,4 @@
 /**
- * Type definitions
- */
-
-
-/**
  * Role types
  */
 export const RoleTypes = {

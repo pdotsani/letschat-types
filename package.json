@@ -19,7 +19,6 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "clean": "rm -rf dist",
-    "prepack": "npm run build",
     "prepare": "npm run build"
   },
   "keywords": ["typescript", "types", "letschat"],

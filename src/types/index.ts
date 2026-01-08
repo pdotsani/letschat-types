@@ -6,18 +6,10 @@
 /**
  * Role types
  */
-export const Role = {
+export const RoleTypes = {
   User: 'user',
   System: 'system',
   Assistant: 'assistant',
 } as const;
 
-export type Role = typeof Role[keyof typeof Role];
-/**
- * Response message interface
- */
-export interface ResponseMessage {
-  content: string;
-  messageRole: Role;
-  timestamp: Date;
-}
+export type Role = typeof RoleTypes[keyof typeof RoleTypes];

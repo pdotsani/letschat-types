@@ -3,6 +3,10 @@ node_modules/
 
 # Build output
 dist/
+index.d.ts
+index.js
+index.d.ts.map
+index.js.map
 *.tsbuildinfo
 
 # IDE

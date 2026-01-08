@@ -2,11 +2,13 @@
   "name": "@letschat/types",
   "version": "1.0.0",
   "description": "Shared TypeScript types library for Let's Chat",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
       "default": "./dist/index.js"
     }
   },

@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "tsc && npm run bundle && npm run create-js",
-    "create-js": "node -e \"require('fs').writeFileSync('index.js', 'module.exports = {};\\n')\"",
+    "create-js": "node scripts/extract-runtime-values.js",
     "bundle": "dts-bundle-generator -o index.d.ts --project tsconfig.json --no-banner src/index.ts",
     "watch": "tsc --watch",
     "clean": "rm -rf dist index.d.ts index.js index.d.ts.map index.js.map",

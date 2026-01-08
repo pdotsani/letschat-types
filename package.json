@@ -15,11 +15,9 @@
     "index.js"
   ],
   "scripts": {
-    "build": "tsc && npm run bundle && npm run create-js",
-    "create-js": "node scripts/extract-runtime-values.js",
-    "bundle": "dts-bundle-generator -o index.d.ts --project tsconfig.json --no-banner src/index.ts",
+    "build": "tsc",
     "watch": "tsc --watch",
-    "clean": "rm -rf dist index.d.ts index.js index.d.ts.map index.js.map",
+    "clean": "rm -rf dist",
     "prepack": "npm run build",
     "prepare": "npm run build",
     "prepublishOnly": "npm run clean && npm run build"
@@ -32,7 +30,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "typescript": "^5.3.3",
-    "dts-bundle-generator": "^9.0.0"
+    "typescript": "^5.3.3"
   }
 }

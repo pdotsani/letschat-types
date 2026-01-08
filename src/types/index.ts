@@ -2,15 +2,17 @@
  * Type definitions
  */
 
+
 /**
  * Role types
  */
-export enum Role {
-  User = 'user',
-  System = 'system',
-  Assistant = 'assistant',
-}
+export const Role = {
+  User: 'user',
+  System: 'system',
+  Assistant: 'assistant',
+} as const;
 
+export type Role = typeof Role[keyof typeof Role];
 /**
  * Response message interface
  */

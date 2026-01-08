@@ -5,13 +5,13 @@
 /**
  * Role types
  */
-export const Role = {
+export const RoleValues = {
   User: 'user',
   System: 'system',
   Assistant: 'assistant',
 } as const;
 
-export type Role = typeof Role[keyof typeof Role];
+export type Role = typeof RoleValues[keyof typeof RoleValues];
 
 /**
  * Response message interface

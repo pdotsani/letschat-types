@@ -1,5 +1,5 @@
 {
-  "name": "@letschat/types",
+  "name": "letschat-types",
   "version": "1.0.0",
   "description": "Shared TypeScript types library for Let's Chat",
   "type": "module",

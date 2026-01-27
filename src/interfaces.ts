@@ -6,5 +6,7 @@ import { Role } from './types.js';
 export interface ResponseMessage {
   content: string;
   messageRole: Role;
-  timestamp: Date;
+  timestamp?: Date;
+  userId?: string;
+  chatId?: string;
 }
